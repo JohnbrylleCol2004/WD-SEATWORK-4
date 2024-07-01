@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, sans-serif;
+}
+header{
+    background-color: #333;
+    color:black;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+     & img{
+        width: 100px;
+        height: 100px;
+        margin-right: 15rem;
+     } 
+    & a{
+        color: white;
+        text-decoration: none;
+        font-size: 1.2rem;
+        margin: 0 1rem;
+        margin-right: 5rem;
+        width: 100%;
+        text-align: center;
+         &:hover{
+            transition: all 0.3s ease-in-out;
+            color: red;
+         }
+     }
+}
+section.first{
+    background:url(../img/Bike.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    & div.text1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: 1000;
+        font-size: 6rem;
+        margin-bottom: -5rem;
+        margin-left: -11rem;
+        color: black;
+    }
+    & div.text2{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: 1000;
+        font-size: 2rem;
+        margin-bottom: 1rem;
+        margin-left: 3rem;
+        color: red;
+    }
+    & p{
+        font-size: 1.5rem;
+        margin-left: 2rem;
+        color: black;
+        margin-top: -1rem;
+    }
+    & a{
+        font-size: 1.5rem;
+        position: relative;
+        color: #fff;
+        text-shadow: 3px 4px 5px rgba(0,0,0,0.6);
+        display: flex;
+        justify-content: center;
+        padding: 1rem;
+        background: #000;
+        align-items: center;
+        text-decoration: none;
+        font-weight: bold;
+        border-radius: 10px;
+        transition: 0.5s;
+        &:hover{
+          transform: scale(1.2);
+          color: orangered;
+        }
+     }
+}
