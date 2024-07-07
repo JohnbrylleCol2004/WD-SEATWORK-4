@@ -1,0 +1,198 @@
+@keyframes animate{
+    0%{
+        transform: perspective(1000px) rotateY(0deg);
+    }
+    100%{
+        transform: perspective(1000px) rotateY(360deg);
+    }
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Poppins', sans-serif;
+    background: #f4f4f4;
+    color: #333;
+}
+header.nav{
+    display: flex;
+    flex-direction: ;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0.5rem 0;
+    background: linear-gradient(black, white);;
+    & img{
+        height: 40px;
+    }
+    & h1{
+        color: white;
+        font-size: 1.5rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+    & a{
+        padding: 0.6em 2em;
+        border: none;
+        text-decoration: none;
+        color: white;
+        background: #111;
+        cursor: pointer;
+        position: relative;
+        z-index: 0;
+        border-radius: 10px;
+        user-select: none;
+        -webkit-user-select: none;
+        touch-action: manipulation;
+        transition: 1.5s;
+        &:hover{
+            background: blue;
+        }
+    }
+}
+section.hero{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:url(../img/League.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+    padding: 0.5rem 0;
+    & h1{
+        color: white;
+        font-size: 6rem;
+        text-align: center;
+    }
+    & h2{
+        color: blue;
+        font-size: 4.5rem;
+        text-align: center;
+    }
+}
+section.first-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(../img/lolchamps.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    height: 98.7dvh;
+    width: 98.7dvw;
+    & h1{
+        color: lightblue;
+        font-size: 5rem;
+        text-align: center;
+        margin: 30px;
+    }
+    & p{
+        color: white;
+        font-size: 1.5rem;
+        text-align: center;
+    }
+}
+section.second-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100dvh;
+    background: linear-gradient(black, white);
+    & .content2{
+        margin: 150px auto;
+        width: 70%;
+    }
+    & img{
+        max-width: 60%;
+        float: right;
+        border-radius: 50px;
+        margin-left: 10px;
+    }
+    & .runes{
+        color: white;
+        transition: 1.5s;
+        margin-top: 10rem;
+        & h1{
+        font-size: 5rem;
+        transition: 0.5s;
+        &:hover{
+            color: black;
+            cursor: pointer;
+        }
+        }
+        & p{
+            color: black;
+            font-size: 1.5rem;
+        }
+     
+    }
+}
+section.third-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100dvh;
+    background: linear-gradient(gray, black);
+    & .content2{
+        margin: 150px auto;
+        width: 70%;
+    }
+    & img{
+        max-width: 50%;
+        float: left;
+        border-radius: 50px;
+        margin-left: 10px;
+        margin-right: 5px;
+        margin-bottom: 10px;
+    }
+    & .text{
+        color: black;
+        transition: 1.5s;
+        margin-top: 14rem;
+        & h1{
+            font-size: 5rem;
+            transition: 0.5s;
+        &:hover{
+            color: white;
+            cursor: pointer;
+        }
+        }
+        & p{
+            color: gray;
+            font-size: 1.5rem;
+        }
+}
+}
+footer.design2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: black;
+    & img{
+        width: 50px;
+        height: 50px;
+        margin: 10px;
+    }
+    & .socials{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    & .trademark{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        & p{
+            font-size: 10px;
+            color: gray;
+            margin-right: 10px;
+        }
+    }
+}
+
