@@ -220,33 +220,143 @@ section.fourth{
     width: 100%;
     height: 100%;
     background: #222;
-    &  .card{
-        display: flex;
-        justify-content: space-around;
-        width: 70%;
-        & .card1{
-            width: 280px;
-            height: 360px;
-            padding: 2rem 1rem;
-            background: #fff;
-            position: relative;
+     & .text{
+        color: white;
+        & h1{
+            font-size: 60px;
+            padding: 5px;
             display: flex;
-            align-items: flex-end;
-            box-shadow: 0px 7px 10px rgba(0,0,0,0.5);
-            transition: 0.5s ease-in-out;
-            &:hover{
-                transform: translateY(20px);
-            }
-         & .card1::before{
-            content: "";
-            position: absolute;
-            top: 0;
-            left: 0;
-            display: block;
+            justify-content: center;
+            align-items: center;
+            font-weight: 1000;
+        }
+     }
+     & .card2{
+        width:320px;
+        height:500px;
+        border-radius: 20px;
+        border: 8px solid #fff;
+        position: relative;
+        overflow: hidden;
+        margin: 20px;
+           & img{
             width: 100%;
             height: 100%;
-            background: linear-gradient(to bottom, rgba(0,0,0,0.75), rgba(255, 0,));
+            object-fit: cover;
+            border-radius: 15px;
+           }
+           & .back{
+            width: 100%;
+            height: 100%;
+            top: 0;
+            right: -100%;
+            position: absolute;
+            background: #1f3d4714;
+            backdrop-filter: blur(5px);
+            border-radius: 15px;
+            color: white;
+            padding: 30px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            transition: 2s;
+           }
+           &:hover .back{
+            right: 0;
+           }
+      
+           & .card-title{
+            text-transform: uppercase;
+            font-size: 50px;
+            font-weight: 500;
+           }
+           & .sub{
+            text-transform: capitalize;
+            font-size: 14px;
+            font-weight: 300;
+           }
+           & .card-info{
+            font-size: 16px;
+            line-height: 25px;
+            margin: 40px 0;
+            font-weight: 400;
+           }
+           & .btn{
+            color: #1f3d47;
+            background: #8fabba;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-transform: capitalize;
+            border: none;
+            outline: none;
+            font-weight: 500;
+            cursor: pointer;
+           }
          }
+}
+footer.sign9{
+    background-color: #212329 ;
+    padding: 4rem 0 4rem 0;
+    & .footer-content{
+        color: white;
+        display: flex;
+        width: 80%;
+        height: 40vh;
+        background-color: #212329
+        justify-content: center;
+        flex-wrap: wrap;
+        margin: 0 50px;
+    }
+    & .footer-heading{
+        display: flex;
+        flex-direction: column;
+        margin-right: 4rem;
+    }
+    & .footer-heading h2{
+        margin-bottom: 2rem;
+    }
+    & .footer-heading a{
+        text-decoration: none;
+        color: white;
+        margin-bottom: 10px;
+        transition: 1.5s;
+        &:hover{
+            color: orange;
+            box-shadow: 19px 33px 15px 15px rgba(0,0,0,0.81);
+            -webkit-box-shadow: 19px 33px 15px 15px rgba(0,0,0,0.81);
+            -moz-box-shadow: 19px 33px 15px 15px rgba(0,0,0,0.81);
         }
     }
+    & .footer-email-form{
+        margin-bottom: 2rem;
+    }
+    & #footer-email{
+        width: 250px;
+        height: 40px;
+        border: none;
+        outline: none;
+        border-radius: 5px;
+        padding-left: 0.5rem;
+        font-size: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    & #footer-email::placeholder{
+        color:gray
+    }
+    & #footer-email-btn{
+        width: 100px;
+        height: 40px;
+        border-radius: 4px;
+        background-color: orange;
+        outline: none;
+        border: none;
+        color: #fff;
+        font-size: 1rem;
+        &:hover{
+            cursor: pointer;
+            background-color: #ee5921;
+            transition: all 1.5s ease-out;
+        }
+      }
 }
